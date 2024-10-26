@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Duru Sans;
+            display: flex;
+            justify-content: center;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            width: 100%;
+			
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+		
+		.h1 {
+			font-family: Supermolot;
+		}
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin-top: 80px; /* Offset for fixed header */
+        }
+
+        .marquee {
+            background-color: #ddd;
+            color: black;
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: 18px;
+            padding: 10px 0;
+        }
+
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .main-column {
+            width: 85%;
+            display: flex;
+        }
+
+        .text-column, .list-column {
+            width: 70%;
+            padding: 10px;
+            background-color: #fff;
+            margin-right: 10px;
+        }
+
+        .list-column ul {
+            list-style-type: none;
+        }
+
+        .list-column ul li {
+            margin: 10px 0;
+        }
+
+        .list-column ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .side-column {
+            width: 20%;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        .side-column ul {
+            list-style-type: none;
+        }
+
+        .side-column ul li {
+            margin: 10px 0;
+        }
+
+        .side-column ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 style="font-family:Supermolot">RUPTURE</h1>
+    </div>
+    <div class="container">
+        <div class="marquee">
+            <span>Wednesday, 25th of December we'll be screening "Enchino Man"</span>
+        </div>
+        <div class="content">
+            <div class="main-column">
+                <div class="text-column">
+					<p>Latest News and Events 2/3/25</p>
+                    <p>Two days out of the glass case had not improved the new jesus’ condition. One side of his face had been partly mashed in and on the other side, his eyelid had split and a pale dust was seeping out of it. For a while her face had an empty look, as if she didn’t know what she thought about him or didn’t think anything. She might have sat there for ten minutes, without a thought, held by whatever it was that was familiar about him. She had never known anyone who looked like him before, but there was something in him of everyone she had ever known, as if they had all been rolled into one person and killed and shrunk and dried.</p>
+                </div>
+                <div class="list-column">
+                    <ul>
+                        <li><a href="#article1"><b>Paul Mescal Assasinated</b></a></li>
+						<p><i>Paul Ryan, Last Luas Driver</i></p>
+                        <li><a href="#article2"><b>Article 2</b></a></li>
+                        <li><a href="#article3"><b>Article 3</b></a></li>
+                        <li><a href="#article4"><b>Article 4</b></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="side-column">
+                <ul>
+                    <li><a href="#link1">Link 1</a></li>
+                    <li><a href="#link2">Link 2</a></li>
+                    <li><a href="#link3">Link 3</a></li>
+                    <li><a href="#link4">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
