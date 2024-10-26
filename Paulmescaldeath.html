@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Design</title>
+	 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+	
+	
+		
+		
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Open Sans;
+		
+			   
+            display: flex;
+            justify-content: center;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            width: 100%;
+			
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+		
+		.h1 {
+			font-family: Supermolot;
+		}
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin-top: 80px; /* Offset for fixed header */
+        }
+
+        .marquee {
+            background-color: #ddd;
+            color: black;
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: 18px;
+            padding: 10px 0;
+        }
+
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .main-column {
+            width: 85%;
+            display: flex;
+        }
+
+        .text-column, .list-column {
+            width: 70%;
+            padding: 10px;
+            background-color: #fff;
+            margin-right: 10px;
+        }
+
+        .list-column ul {
+            list-style-type: none;
+        }
+
+        .list-column ul li {
+            margin: 10px 0;
+        }
+
+        .list-column ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .side-column {
+            width: 20%;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        .side-column ul {
+            list-style-type: none;
+        }
+
+        .side-column ul li {
+            margin: 10px 0;
+        }
+
+        .side-column ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 style="font-family:Supermolot">RUPTURE</h1>
+    </div>
+    <div class="container">
+        <div class="marquee">
+            <span>Wednesday, 25th of December we'll be screening "Enchino Man"</span>
+        </div>
+        <div class="content">
+            <div class="main-column">
+                <div class="text-column">
+					<p>Paul Mescal Brutally Beaten to Death in his Dublin 4 Home</p>
+					<p>				</p>
+                    <p>Thank god. Good Riddance. Snoopy is an anthropomorphic beagle[5] in the comic strip Peanuts by Charles M. Schulz. He can also be found in all of the Peanuts films and television specials. Since his debut on October 4, 1950, Snoopy has become one of the most recognizable and iconic characters in the comic strip and is considered more famous than Charlie Brown in some countries. The original drawings of Snoopy were inspired by Spike, one of Schulz's childhood dogs.</p>
+                </div>
+           
+            </div>
+            <div class="side-column">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#link2">Contact</a></li>
+                    <li><a href="#link3">Support</a></li>
+                    <li><a href="#link4">Archive</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
