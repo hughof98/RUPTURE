@@ -4,12 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Page Design</title>
-	 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <style>
-	
-	
-		
-		
         * {
             margin: 0;
             padding: 0;
@@ -17,9 +13,7 @@
         }
 
         body {
-            font-family: Open Sans;
-		
-			   
+            font-family: 'Open Sans', Arial, sans-serif;
             display: flex;
             justify-content: center;
             background-color: #f4f4f4;
@@ -27,7 +21,6 @@
 
         .header {
             width: 100%;
-			
             background-color: red;
             color: white;
             text-align: center;
@@ -37,10 +30,6 @@
             left: 0;
             z-index: 1;
         }
-		
-		.h1 {
-			font-family: Supermolot;
-		}
 
         .container {
             width: 80%;
@@ -48,13 +37,15 @@
             margin-top: 80px; /* Offset for fixed header */
         }
 
+        /* Marquee Styling */
         .marquee {
-            background-color: #ddd;
-            color: black;
+            background-color: black;
+            color: orange;
             overflow: hidden;
             white-space: nowrap;
             font-size: 18px;
             padding: 10px 0;
+            font-family: monospace; /* Terminal font style */
         }
 
         .marquee span {
@@ -117,6 +108,34 @@
             color: #333;
             text-decoration: none;
         }
+
+        /* Responsive styling for mobile */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            /* Adjust column stacking order for mobile */
+            .list-column {
+                order: 1;
+                width: 100%;
+            }
+
+            .text-column {
+                order: 2;
+                width: 100%;
+            }
+
+            .side-column {
+                order: 3;
+                width: 100%;
+            }
+
+            .main-column {
+                width: 100%;
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
@@ -130,13 +149,13 @@
         <div class="content">
             <div class="main-column">
                 <div class="text-column">
-					<p>Latest News and Events 2/3/25</p>
+                    <p>Latest News and Events 2/3/25</p>
                     <p>Two days out of the glass case had not improved the new jesus’ condition. One side of his face had been partly mashed in and on the other side, his eyelid had split and a pale dust was seeping out of it. For a while her face had an empty look, as if she didn’t know what she thought about him or didn’t think anything. She might have sat there for ten minutes, without a thought, held by whatever it was that was familiar about him. She had never known anyone who looked like him before, but there was something in him of everyone she had ever known, as if they had all been rolled into one person and killed and shrunk and dried.</p>
                 </div>
                 <div class="list-column">
                     <ul>
                         <li><a href="Paulmescaldeath.html"><b>Paul Mescal Assasinated</b></a></li>
-						<p><i>Paul Ryan, Last Luas Driver</i></p>
+                        <p><i>Paul Ryan, Last Luas Driver</i></p>
                         <li><a href="#article2"><b>Article 2</b></a></li>
                         <li><a href="#article3"><b>Article 3</b></a></li>
                         <li><a href="#article4"><b>Article 4</b></a></li>
